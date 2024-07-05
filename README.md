@@ -19,11 +19,7 @@ The system connects to a Wi-Fi network and operates by acquiring sensor data at 
 <br>1. Install the Arduino IDE from the official website.
 <br>2. In the Arduino IDE, go to File > Preferences and add the following URL to the "Additional Boards Manager URLs" field: http://arduino.esp8266.com/stable/package_esp8266com_index.json.
 <br>3. Install necessary libraries by going to Sketch > Include Library > Manage Libraries.
-<br>4. Search for and install the following libraries:
-DHT sensor library
-Adafruit Unified Sensor
-ESP8266WiFi
-ESP8266HTTPClient
+<br>4. Search for and install the following libraries: DHT sensor library, Adafruit Unified Sensor, ESP8266WiFi, ESP8266HTTPClient
 
 - **Setting Up the Database: PHPMyAdmin by XAMPP**
 <br>1. Download and install XAMPP from the official website.
