@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Smart Home System - Details</title>
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+  <center>
+    <h2>Details Page</h2>
+  </center>
+  <center>
+    <button onclick="location.href='index.html'" class="btn">Back to Main Page</button>
+  </center>
+  <div class="container">
+    <div class="chart-container">
+      <canvas id="temperatureChart"></canvas>
+      <canvas id="humidityChart"></canvas>
+      <canvas id="distanceChart"></canvas>
+    </div>
+
+    <div class="table-container">
+      <table id="sensorDataTable">
+        <thead>
+          <tr>
+            <th>ID</th>
+            <th>Date</th>
+            <th>Time</th>
+            <th>Temperature (°C)</th>
+            <th>Humidity (%)</th>
+            <th>Distance (cm)</th>
+          </tr>
+        </thead>
+        <tbody>
+        </tbody>
+      </table>
+    </div>
+  </div>
+
+  <script src="scripts.js"></script>
+</body>
+
+</html>

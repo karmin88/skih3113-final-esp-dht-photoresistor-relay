@@ -1,0 +1,120 @@
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: #f4f4f9;
+  margin: 0;
+  padding: 0;
+  color: #333;
+  overflow-x: hidden; /* Ensure no horizontal scrolling */
+}
+
+h2 {
+  font-size: 2em;
+  margin: 20px 0;
+}
+
+button {
+  padding: 10px 20px;
+  margin-top: 20px;
+  font-size: 1em;
+  background-color: #007BFF;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+.averages-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.average-box {
+  font-size: 1em;
+  font-weight: bold;
+  border: 2px solid #007BFF;
+  padding: 10px 20px;
+  border-radius: 10px;
+  background-color: #fff;
+  text-align: center;
+  flex: 1 1 200px;
+  margin: 10px;
+}
+
+.insights-box {
+  font-size: 1em;
+  font-weight: bold;
+  border: 2px solid #FF8C00;
+  padding: 10px 20px;
+  border-radius: 10px;
+  background-color: #fff;
+  text-align: center;
+  width: calc(100% - 80px); /* Adjust width as necessary */
+  margin: 20px 10px; /* Adjust margins as necessary */
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+}
+
+.table-container,
+.chart-container {
+  width: 100%;
+  max-width: 600px;
+  margin: 10px;
+}
+
+table {
+  width: 100%;
+  margin: 20px auto;
+  border-collapse: collapse;
+  text-align: center;
+  background-color: #fff;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+th, td {
+  border: 1px solid #dddddd;
+  padding: 8px;
+}
+
+th {
+  background-color: #007BFF;
+  color: #fff;
+}
+
+@media (min-width: 768px) {
+  .container {
+    flex-direction: row;
+    justify-content: space-around;
+  }
+
+  .table-container,
+  .chart-container {
+    width: 45%;
+  }
+}
+
+@media (max-width: 768px) {
+  .chart-container {
+    order: -1; /* Move charts above the table */
+  }
+
+  .average-box {
+    flex: 1 1 100%;
+  }
+
+  .insights-box {
+    width: calc(100% - 60px); /* Adjust width to fit within smaller screens */
+    margin: 20px 10px; /* Adjust margins as necessary */
+  }
+}
