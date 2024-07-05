@@ -47,7 +47,7 @@ void loop() {
   int distance = measureDistance();
 
   // Validate sensor readings
-  if (isnan(humidity) || isnan(temperature) || distance < 0) {
+  if (isnan(humidity) || isnan(temperature) || distance < 2 || distance > 500) {
     Serial.println("Failed to read valid sensor data! Skipping data save.");
     delay(10000); // Delay 10 seconds before next reading
     return;
